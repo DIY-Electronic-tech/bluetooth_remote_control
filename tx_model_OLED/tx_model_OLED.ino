@@ -32,7 +32,7 @@ void setup() {
 
   oled.clear();
   oled.setScale(2);
-  oled.setCursorXY(4, 24);// (128/2)-(72/2)    72 - 6*3*4  ...
+  oled.setCursorXY(4, 24); // x = (128 - 10*6*2) / 2    y = ...
   oled.print("Connecting");
 
   String command = "";
