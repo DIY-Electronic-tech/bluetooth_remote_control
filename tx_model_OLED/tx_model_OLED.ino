@@ -147,6 +147,13 @@ void loop() {
       turnOn = !turnOn;
       updateDis();
     }
+    /*
+    
+    Если хотите "достукивание" и при включении реле, оставьте только
+      sendAction();
+      startTimer1();
+    
+    */
 
   }
 
@@ -198,7 +205,7 @@ void switchRel() {
   pressButF = false;
 
 }
-
+// Button timer
 void startTimer() {
   ts = millis();
 }
@@ -207,7 +214,7 @@ uint32_t getPastTime() {
   return millis() - ts;
 }
 
-
+// "Panic mode" timer
 void startTimer1() {
   tss = millis();
 }
@@ -216,7 +223,7 @@ uint32_t getPastTime1() {
   return millis() - tss;
 }
 
-
+// Auto-off by timer
 void startTimer2() {
   tsss = millis() / 1000;
 }
